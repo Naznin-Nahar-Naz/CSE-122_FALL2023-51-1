@@ -1,1 +1,22 @@
+#include <bits/stdc++.h>
 
+int main()
+{
+    int n;
+    std::cin >> n;
+
+    std::string str;
+    std::cin >> str;
+
+    n = str.size();
+
+    for (int i = 0; i < str.size(); i++)
+    {
+        if (str.size() > 10)
+            std::cout << str[0] << ", " << n << ", " << str[n - 1] << std::endl;
+        else
+            std::cout << str << std::endl;
+    }
+
+    return 0;
+}
