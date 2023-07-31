@@ -1,0 +1,92 @@
+ //A. Theatre Square
+ 
+#include<bits/stdc++.h>
+using namespace std;
+#define endl '\n';
+#define ll long long int
+
+
+
+int main() {
+	
+	 ios_base::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
+    ll n,m,a,x,y;
+    cin>>n>>m>>a;
+    if(n%a==0) x=(n/a);
+    else x=(n/a)+1;
+     if(m%a==0) y=(m/a);
+    else y=(m/a)+1;
+    cout<<x*y<<endl;
+}
+
+
+// A. Next Round 
+
+
+
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long int
+
+ 
+int main()
+{
+	ios::sync_with_stdio(false);
+	cin.tie(0); cout.tie(0);
+	int n, k; int ans = 0; int flag = 0;
+	cin >> n >> k;
+	
+
+    int a[n]; 
+	for (int i = 1; i <= n; i++)
+	{
+		cin >> a[i];
+		flag = a[k];
+	}
+	for (int i = 1; i <= n; i++)
+	{
+		if (a[i] > 0 && a[i] >= flag)ans++;
+	}
+	cout << ans;
+}
+
+
+
+// A. Domino piling
+
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long int
+#define endl "\n"
+
+int main()  
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
+
+    int m, n, res;
+    cin>> m >> n;
+
+    res = m*n;
+
+    cout<< res/2 << endl;
+
+ 
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
